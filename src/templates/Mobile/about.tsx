@@ -64,7 +64,7 @@ const Index = () => {
       </Container>
       <ExtendedContainer>
         <InfoColumn>
-          <H2CAP>An all in one platform to build the next crypto gem.</H2CAP>
+          <H2CAP>All in one platform to build the next crypto gem.</H2CAP>
           <AboutText>
             We aim to provide a set of tools which will make development super
             easy on Solana blockchain.
