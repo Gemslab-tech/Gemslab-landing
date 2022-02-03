@@ -41,6 +41,7 @@ const Presale = styled.button`
   text-decoration: none;
   text-align: center;
   border: none;
+  margin-top: 20px;
 `;
 
 const H2CAP = styled(H2)`
