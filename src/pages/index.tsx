@@ -11,15 +11,7 @@ interface Props {
 
 const Index: NextPage<Props> = ({ isMobile }) => {
   return (
-    <Main
-      meta={
-        <Meta
-          title="SolRider"
-          description="The first play and earn bike racing game built on blockhain"
-        />
-      }
-      isMobile={isMobile}
-    >
+    <Main meta={<Meta title="Gemslab" description="" />} isMobile={isMobile}>
       {isMobile ? <AboutMobile /> : <About />}
     </Main>
   );
