@@ -32,11 +32,10 @@ const ActionRow = styled(Row)`
 
 const Presale = styled.button`
   font-size: 16px;
-  color: white;
+  color: ${({ theme }) => theme.neutral};
   border-radius: 30px;
   padding: 12px 60px;
-  background: linear-gradient(270deg, #009688 7.12%, rgb(36, 62, 147) 96.59%);
-  // background: linear-gradient(90deg, #712972 0%, #443BA8 96.93%);
+  background: ${({ theme }) => theme.actionButtonGradient};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
   text-decoration: none;
   text-align: center;

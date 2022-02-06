@@ -11,13 +11,13 @@ export const Column = styled.div`
 `;
 
 export const FullContainer = styled.div`
-  background: linear-gradient(112.62deg, #101b41 0.48%, #442e73 121.31%);
+  background: ${({ theme }) => theme.bgGradient};
   min-height: 100vh;
   width: 100vw;
 `;
 
 export const FullContainerReverted = styled.div`
-  background: linear-gradient(67.71deg, #101b41 0.77%, #442e73 115.43%);
+  background: ${({ theme }) => theme.bgGradientRevert};
   min-height: 100vh;
   width: 100vw;
 `;
@@ -45,7 +45,7 @@ export const H2 = styled.h1`
   font-size: 36px;
   line-height: 50px;
   font-weight: bold;
-  color: white;
+  color: ${({ theme }) => theme.neutral};
   @media only screen and (min-width: 600px) {
     font-size: 44px;
     line-height: 64px;
@@ -55,5 +55,5 @@ export const H2 = styled.h1`
 export const P = styled.p`
   font-size: 16px;
   line-height: 26px;
-  color: white;
+  color: ${({ theme }) => theme.neutral};
 `;
