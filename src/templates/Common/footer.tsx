@@ -107,13 +107,13 @@ const Index = (props: IMainProps) => {
             {!isMobile && (
               <LinksContainer>
                 <Label>Social</Label>
-                <Link href="/" target="_blank">
+                <Link href="https://twitter.com/gemslab_space" target="_blank">
                   Twitter
                 </Link>
                 <Link href="/" target="_blank">
                   Telegram
                 </Link>
-                <Link href="/" target="_blank">
+                <Link href="https://discord.gg/kavNEPekdy" target="_blank">
                   Discord
                 </Link>
                 <Link href="/" target="_blank">
@@ -130,10 +130,10 @@ const Index = (props: IMainProps) => {
           </LinksRow>
         </CustomContainer>
         <SocialRow>
-          <SocialLink href="" target="_blank">
+          <SocialLink href="https://twitter.com/gemslab_space" target="_blank">
             <img src="/icons/twitter.svg" />
           </SocialLink>
-          <SocialLink href="" target="_blank">
+          <SocialLink href="https://discord.gg/kavNEPekdy" target="_blank">
             <img src="/icons/discord.svg" />
           </SocialLink>
           <SocialLink href="" target="_blank">

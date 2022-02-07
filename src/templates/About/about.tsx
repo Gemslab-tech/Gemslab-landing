@@ -10,15 +10,21 @@ const AboutText = styled(P)`
 `;
 
 const ExtendedContainer = styled(Container)`
-  padding-top: 150px;
+  padding-top: 50px;
   display: flex;
   flex-direction: row;
+  @media screen and (min-width: 600px) {
+    padding-top: 150px;
+  }
 `;
 
 const SolRow = styled(Row)`
-  bottom: 40px;
-  position: absolute;
+  margin-top: 60px;
   align-items: center;
+  @media screen and (min-width: 600px) {
+    bottom: 60px;
+    position: absolute;
+  }
 `;
 
 const SolLogo = styled.img`
@@ -45,8 +51,11 @@ const Presale = styled.button`
 
 const H2CAP = styled(H2)`
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
+  background: ${({ theme }) => theme.textGradient};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 const InfoColumn = styled(Column)`
@@ -64,7 +73,7 @@ const Index = () => {
       </Container>
       <ExtendedContainer>
         <InfoColumn>
-          <H2CAP>All in one platform to build the next crypto gem</H2CAP>
+          <H2CAP>No code platform for Solana ecosystem</H2CAP>
           <AboutText>
             We aim to provide a set of tools which will make development super
             easy on Solana blockchain.

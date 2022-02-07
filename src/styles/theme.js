@@ -9,8 +9,11 @@ export const darkTheme = {
   neutral: "#FFFFFF",
   toggleBorder: "#6B8096",
   background: "#999",
-  bgGradient: "linear-gradient(112.62deg, #101b41 0.48%, #442e73 121.31%)",
-  bgGradientRevert: "linear-gradient(67.71deg, #101b41 0.77%, #442e73 115.43%)",
+  accent: " #ef5da8",
+  bgGradient: "linear-gradient(112.62deg,#0d1836 0.48%,#38265e 121.31%)",
+  bgGradientRevert:
+    "linear-gradient(68.47deg, #0D1836 -9.04%, #38265E 123.99%)",
   actionButtonGradient:
     "linear-gradient(270deg, #009688 7.12%, rgb(36, 62, 147) 96.59%)",
+  textGradient: "linear-gradient(90deg,#b62697 1.89%,#e1c122 100%)",
 };

@@ -1,9 +1,9 @@
 import { NextPage } from "next";
 
 import { Meta } from "@/layout/Meta";
-import About from "@/templates/Desktop/about";
+import About from "@/templates/About/about";
 import { Main } from "@/templates/Main";
-import AboutMobile from "@/templates/Mobile/about";
+import Team from "@/templates/Team/team";
 
 interface Props {
   isMobile: boolean;
@@ -12,7 +12,8 @@ interface Props {
 const Index: NextPage<Props> = ({ isMobile }) => {
   return (
     <Main meta={<Meta title="Gemslab" description="" />} isMobile={isMobile}>
-      {isMobile ? <AboutMobile /> : <About />}
+      <About />
+      <Team />
     </Main>
   );
 };

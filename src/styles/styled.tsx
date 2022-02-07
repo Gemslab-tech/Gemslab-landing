@@ -41,13 +41,23 @@ export const H1 = styled.h1`
   }
 `;
 
-export const H2 = styled.h1`
+export const H2 = styled.h2`
   font-size: 36px;
   line-height: 50px;
   font-weight: bold;
   color: ${({ theme }) => theme.neutral};
   @media only screen and (min-width: 600px) {
     font-size: 44px;
+    line-height: 64px;
+  }
+`;
+export const H3 = styled.h3`
+  font-size: 26px;
+  line-height: 50px;
+  font-weight: bold;
+  color: ${({ theme }) => theme.neutral};
+  @media only screen and (min-width: 600px) {
+    font-size: 38px;
     line-height: 64px;
   }
 `;
