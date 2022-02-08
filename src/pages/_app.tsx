@@ -18,6 +18,18 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
           rel="stylesheet"
         />
       </Head>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-WMKDH8TKSF"
+      ></script>
+      <script>
+        {`window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag("js", new Date());
+
+            gtag("config", "G-WMKDH8TKSF");
+          `}
+      </script>
       <GlobalStyles />
       <body>
         <Component {...pageProps} />
