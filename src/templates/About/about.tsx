@@ -80,8 +80,8 @@ const Index = () => {
           </AboutText>
 
           <ActionRow>
-            <Link href="/">
-              <Presale>Join our newsletter</Presale>
+            <Link href="https://airdrop.gemslab.space">
+              <Presale>Get Early Access</Presale>
             </Link>
           </ActionRow>
           <SolRow>
