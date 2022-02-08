@@ -112,7 +112,6 @@ const TeamMember = (props: MemberProps) => {
           <img src="/icons/linkedin.svg" />
         </a>
       </p>
-      <p>{props.designation}</p>
     </TeamMemberColumn>
   );
 };
