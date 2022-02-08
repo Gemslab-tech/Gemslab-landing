@@ -4,6 +4,7 @@ import { Meta } from "@/layout/Meta";
 import About from "@/templates/About/about";
 import { Main } from "@/templates/Main";
 import Team from "@/templates/Team/team";
+import { AppConfig } from "@/utils/AppConfig";
 
 interface Props {
   isMobile: boolean;
@@ -11,7 +12,12 @@ interface Props {
 
 const Index: NextPage<Props> = ({ isMobile }) => {
   return (
-    <Main meta={<Meta title="Gemslab" description="" />} isMobile={isMobile}>
+    <Main
+      meta={
+        <Meta title={AppConfig.title} description={AppConfig.description} />
+      }
+      isMobile={isMobile}
+    >
       <About />
       <Team />
     </Main>
