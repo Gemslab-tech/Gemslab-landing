@@ -53,8 +53,11 @@ const TeamRow = styled(Row)`
   margin-top: 80px;
 `;
 const TeamMemberColumn = styled(Column)`
-  width: 33%;
+  width: 47%;
   margin-bottom: 100px;
+  @media only screen and (min-width: 600px) {
+    width: 33%;
+  }
   p {
     font-size: 17px;
     font-weight: 600;
@@ -82,6 +85,12 @@ const ProfilePhoto = styled.div`
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 24px;
+  overflow: hidden;
+  img {
+    width: 80px;
+    height: auto;
+    position: absolute;
+  }
 `;
 
 interface MemberProps {
@@ -95,7 +104,7 @@ const TeamMember = (props: MemberProps) => {
   return (
     <TeamMemberColumn>
       <ProfilePhoto>
-        <img src={props.photo} />
+        <img src={`/team/${props.photo}`} />
       </ProfilePhoto>
       <p>
         {props.name}
