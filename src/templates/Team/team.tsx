@@ -118,7 +118,7 @@ const TeamMember = (props: MemberProps) => {
 
 const Index = () => {
   return (
-    <FullContainerReverted>
+    <FullContainerReverted id="team">
       <ExtendedContainer>
         <InfoColumn>
           <Heading>

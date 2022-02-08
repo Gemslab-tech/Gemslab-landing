@@ -89,9 +89,7 @@ const Index = (props: IMainProps) => {
                 Read docs
               </Link>
 
-              <Link href="/" target="_blank">
-                Team
-              </Link>
+              <Link href="#team">Team</Link>
               <Link href="#">Coinmarketcap</Link>
               <Link href="#">Coingecko</Link>
             </LinksContainer>
