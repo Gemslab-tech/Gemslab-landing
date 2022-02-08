@@ -36,6 +36,18 @@ const ActionRow = styled(Row)`
   margin-top: 40px;
 `;
 
+const Overlay = styled.img`
+  position: absolute;
+  opacity: 0.3;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  top: 80px;
+  @media screen and (min-width: 600px) {
+    top: 50px;
+  }
+`;
+
 const Presale = styled.button`
   font-size: 16px;
   color: ${({ theme }) => theme.neutral};
@@ -71,6 +83,7 @@ const Index = () => {
       <Container>
         <Header />
       </Container>
+      <Overlay src="/assets/bg-2.png" />
       <ExtendedContainer>
         <InfoColumn>
           <H2CAP>No code platform for Solana ecosystem</H2CAP>
