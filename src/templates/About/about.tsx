@@ -13,6 +13,8 @@ const ExtendedContainer = styled(Container)`
   padding-top: 50px;
   display: flex;
   flex-direction: row;
+  position: relative;
+  z-index: 1;
   @media screen and (min-width: 600px) {
     padding-top: 150px;
   }
@@ -22,8 +24,7 @@ const SolRow = styled(Row)`
   margin-top: 60px;
   align-items: center;
   @media screen and (min-width: 600px) {
-    bottom: 60px;
-    position: absolute;
+    margin-top: 100px;
   }
 `;
 
