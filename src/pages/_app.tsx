@@ -1,5 +1,6 @@
 import { AppProps } from "next/app";
 import Head from "next/head";
+import Script from "next/script";
 import { ThemeProvider } from "styled-components";
 
 // @ts-ignore
@@ -18,18 +19,19 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
           rel="stylesheet"
         />
       </Head>
-      <script
+      <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-WMKDH8TKSF"
-      ></script>
-      <script>
+        strategy="afterInteractive"
+      ></Script>
+      <Script id="google-analytics" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];
             function gtag(){window.dataLayer.push(arguments);}
             gtag("js", new Date());
 
             gtag("config", "G-WMKDH8TKSF");
           `}
-      </script>
+      </Script>
       <GlobalStyles />
       <body>
         <Component {...pageProps} />
