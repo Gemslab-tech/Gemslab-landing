@@ -70,9 +70,13 @@ const TeamMemberColumn = styled(Column)`
   }
   p:nth-child(3) {
     text-align: center;
-    color: ${({ theme }) => theme.accent};
+    color: ${({ theme }) => theme.toggleBorder};
     padding-top: 16px;
     font-size: 13px;
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 20px;
   }
 `;
 
@@ -98,6 +102,7 @@ interface MemberProps {
   designation: string;
   linkedinUrl: string;
   photo: string;
+  experience: string;
 }
 
 const TeamMember = (props: MemberProps) => {
@@ -112,6 +117,7 @@ const TeamMember = (props: MemberProps) => {
           <img src="/icons/linkedin.svg" />
         </a>
       </p>
+      <p>{props.experience}</p>
     </TeamMemberColumn>
   );
 };
