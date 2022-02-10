@@ -20,8 +20,7 @@ export const teamList = [
     designation: "MARKETING HEAD",
     linkedinUrl: "https://www.linkedin.com/in/rakeshsingh9901/",
     photo: "rakesh.jpeg",
-    experience:
-      "Performance Marketing Manager at PlayShifu, Ex Digiolic, Ex Thrillophilia",
+    experience: "Marketing wizard at PlayShifu, Ex Digiolic, Ex Thrillophilia",
   },
   {
     name: "Raashid Khan",
@@ -38,10 +37,10 @@ export const teamList = [
     experience: "Senior developer at Microsoft, Ex- Adobe",
   },
   {
-    name: "Jay Kumar",
-    designation: "GRAPHICS GEM",
-    linkedinUrl: "https://www.linkedin.com/in/jay-kumar-78188897/",
-    photo: "jay.jpeg",
-    experience: "Ex-Cynapto, Ex-Shoppers Stop",
+    name: "Vikash Kumar",
+    designation: "TESTING GEM",
+    linkedinUrl: "https://www.linkedin.com/in/vikash-kumar-92708a87/",
+    photo: "vikash.jpeg",
+    experience: "Ex-Adobe, Ex-Accenture",
   },
 ];
