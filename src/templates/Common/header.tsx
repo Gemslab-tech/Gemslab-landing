@@ -10,7 +10,7 @@ const LogoRow = styled(Row)`
   position: relative;
   cursor: pointer;
   img {
-    width: 50px;
+    width: 40px;
   }
   span {
     color: white;
@@ -18,8 +18,8 @@ const LogoRow = styled(Row)`
     margin-left: 12px;
     font-size: 15px;
     position: absolute;
-    left: 30px;
-    top: 24px;
+    left: 24px;
+    top: 18px;
   }
 `;
 
