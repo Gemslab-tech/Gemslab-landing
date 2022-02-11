@@ -41,6 +41,6 @@ export const teamList = [
     designation: "TESTING GEM",
     linkedinUrl: "https://www.linkedin.com/in/vikash-kumar-92708a87/",
     photo: "vikash.jpeg",
-    experience: "Ex-Adobe, Ex-Accenture",
+    experience: "Ex-Adobe, Ex-SIXT Germany",
   },
 ];
