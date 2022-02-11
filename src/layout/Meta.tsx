@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 import { AppConfig } from "@/utils/AppConfig";
 
-const folder = "/icons/";
+const folder = "/favicon/";
 
 type IMetaProps = {
   title: string;

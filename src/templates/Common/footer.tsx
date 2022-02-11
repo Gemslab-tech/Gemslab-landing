@@ -62,7 +62,7 @@ const Copyright = styled(Row)`
   align-items: center;
   justify-content: center;
   img {
-    width: 24px;
+    width: 16px;
   }
   span {
     color: #d4e3ff;
@@ -142,7 +142,7 @@ const Index = (props: IMainProps) => {
           </SocialLink>
         </SocialRow>
         <Copyright>
-          <img src="/logo/logo-sm.svg" />{" "}
+          <img src="/logo/logo-no-shadow.svg" />{" "}
           <span>
             © Copyright {new Date().getFullYear()} {AppConfig.title}.
           </span>
