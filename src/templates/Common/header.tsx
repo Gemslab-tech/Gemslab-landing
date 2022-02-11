@@ -7,14 +7,19 @@ import { Row } from "@/styles/styled";
 const LogoRow = styled(Row)`
   padding-top: 10px;
   align-items: center;
+  position: relative;
+  cursor: pointer;
   img {
-    width: 46px;
+    width: 50px;
   }
   span {
     color: white;
     font-weight: 300;
     margin-left: 12px;
     font-size: 15px;
+    position: absolute;
+    left: 30px;
+    top: 24px;
   }
 `;
 
@@ -30,7 +35,7 @@ const Index = () => {
     <Row className="header">
       <Link href="/">
         <LogoRow>
-          <img src={`${router.basePath}/logo/logo-sm.svg`} />
+          <img src={`${router.basePath}/logo/newlogo.svg`} />
           <span> GEMSLAB</span>
         </LogoRow>
       </Link>
