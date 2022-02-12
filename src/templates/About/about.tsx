@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
 
-import { H2, P, Row, Container, FullContainer, Column } from "@/styles/styled";
+import { H1, P, Row, Container, FullContainer, Column } from "@/styles/styled";
 import Header from "@/templates/Common/header";
 
 const AboutText = styled(P)`
@@ -62,11 +62,11 @@ const Presale = styled.button`
   margin-top: 20px;
 `;
 
-const H2CAP = styled(H2)`
+const H2CAP = styled(H1)`
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 800;
   text-align: center;
-  background: ${({ theme }) => theme.textGradient};
+  background: ${({ theme }) => theme.neutral};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
