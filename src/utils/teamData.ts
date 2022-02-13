@@ -13,7 +13,7 @@ export const teamList = [
     designation: "UI HEAD",
     linkedinUrl: "https://www.linkedin.com/in/sourabh-garg-94536887/",
     photo: "sourabh.jpeg",
-    experience: "Ex-Acko, Ex-Playo",
+    experience: "Lead designer & developer, Ex-Acko, Ex-Playo",
   },
   {
     name: "Rakesh Singh",
