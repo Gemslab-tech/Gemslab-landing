@@ -10,7 +10,7 @@ const AboutText = styled(P)`
   margin-top: 45px;
   text-align: center;
   color: #cfcfcf;
-  max-width: 500px;
+  max-width: 540px;
   font-size: 17px;
 `;
 
