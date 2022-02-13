@@ -68,12 +68,10 @@ const ActionRow = styled(Column)`
 `;
 
 const GetEarly = styled.span`
-  span {
-    font-size: 14px;
-    color: ${({ theme }) => theme.neutral};
-    display: inline-block;
-    margin-bottom: 20px;
-  }
+  font-size: 14px;
+  color: ${({ theme }) => theme.neutral};
+  display: inline-block;
+  margin-bottom: 20px;
 `;
 
 const SuccessRow = styled(Column)`
@@ -215,6 +213,7 @@ const Index = () => {
               <GetEarly>Get early access.</GetEarly>
               <Input
                 value={email}
+                placeholder="Enter your email address"
                 disabled={loading}
                 onChange={(e) => {
                   updateEmail(e.target.value);
