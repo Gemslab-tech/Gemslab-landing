@@ -46,15 +46,10 @@ const ActionRow = styled(Column)`
   max-width: 540px;
   margin-left: auto;
   margin-right: auto;
-  span {
-    font-size: 14px;
-    color: ${({ theme }) => theme.neutral};
-    display: inline-block;
-    margin-bottom: 20px;
-  }
+
   button {
-    position: absolute;
     background-color: transparent;
+    position: absolute;
     bottom: 24px;
     right: 20px;
     border: none;
@@ -69,6 +64,15 @@ const ActionRow = styled(Column)`
     color: #ff5151;
     left: 2px;
     position: absolute;
+  }
+`;
+
+const GetEarly = styled.span`
+  span {
+    font-size: 14px;
+    color: ${({ theme }) => theme.neutral};
+    display: inline-block;
+    margin-bottom: 20px;
   }
 `;
 
@@ -208,7 +212,7 @@ const Index = () => {
             </SuccessRow>
           ) : (
             <ActionRow>
-              <span>Get early access.</span>
+              <GetEarly>Get early access.</GetEarly>
               <Input
                 value={email}
                 disabled={loading}
@@ -216,7 +220,17 @@ const Index = () => {
                   updateEmail(e.target.value);
                 }}
               />
-              <button onClick={submitEmail}>I want it!</button>
+              {loading ? (
+                <div className="loader">
+                  <span />
+                  <span />
+                  <span />
+                  <span />
+                  <span />
+                </div>
+              ) : (
+                <button onClick={submitEmail}>I want it!</button>
+              )}
               {error && <p>Email Id is invalid!</p>}
             </ActionRow>
           )}
