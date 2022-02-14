@@ -15,11 +15,12 @@ const LogoRow = styled(Row)`
   span {
     color: white;
     font-weight: 300;
-    margin-left: 12px;
-    font-size: 15px;
+    margin-left: 26px;
+    font-size: 14px;
     position: absolute;
     left: 24px;
-    top: 18px;
+    top: 20px;
+    letter-spacing: 1px;
   }
 `;
 
@@ -35,7 +36,7 @@ const Index = () => {
     <Row className="header">
       <Link href="/">
         <LogoRow>
-          <img src={`${router.basePath}/logo/newlogo.svg`} />
+          <img src={`${router.basePath}/logo/logo-gem.svg`} />
           <span> GEMSLAB</span>
         </LogoRow>
       </Link>
